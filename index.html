@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dice Roll</title>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header class="site-header">
+        <div class="site-header-inner">
+          <div class="header-left">DICE ROLL</div>
+          <div class="header-center">x</div>
+          <div class="header-right">x</div>
+        </div>
+      </header>
+      <main class="site-container">
+        <h1 id="game-header">Dice Roll Game</h1>
+        <br>
+        <div class="game">
+          <button id="start" onclick="game()">Roll</button>
+          <div id="number"></div>
+          <div id="scoreN">Score:</div>
+          <div id="win"></div>
+          <div id="lose"></div>
+          <div id="end"></div>
+          <button id="reset" onclick="restart()" style="visibility: hidden">
+            Reset
+          </button>
+        </div>
+      </main>
+    </div>
+    <footer class="footer-outer">
+      <div class="footer-inner">Text for footer</div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
